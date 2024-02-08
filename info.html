@@ -27,5 +27,26 @@
    8) git reset --soft <code>: here your code will not be deleted in which you are working that means you have to remove error yourself
                                but the commit you made will be deleted and in logs you wont see that commit. whereas in --hard
                                it use to delete our code to the last version of commit as well as the commit you made will be deleted and in logs you wont see that commit
-   9) 
+   #NOTE: this all above commands are of git and you are working on your machine only.
+
+   #GitHUb
+   we created repository by 
+   1) login on github 
+   2) there is a "New" button on top left corner click on it
+   3) give repository name in our case "vcs" and create repository on github
+   then you will see two options 
+                  A] …or create a new repository on the command line : list of commands under this
+                  B] …or push an existing repository from the command line: list of commands under this
+   #Note: we are in "option B" because we already have repository on local machine i.e. till commit command we have already done
+         so, choose the commands in "option B" and execute one by one on our Vscode Terminal
+   4) Commands in option B:
+                           git remote add origin https://github.com/SIDdhant-123/vcs.git   : We are adding a remote origin means where our code should be pushed
+                           git branch -M main   :   We are creating branch for that repository called "main"
+                           git push -u origin main
+
+                           do refresh on our website and you can see the code there
+
+  #Note: from next time if you change anything simply
+         git add .   ->>>> then ->>> git commit -m "message"  ->> git push   & your new code will be available on github
+
          -->
