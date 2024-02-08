@@ -27,6 +27,10 @@
    8) git reset --soft <code>: here your code will not be deleted in which you are working that means you have to remove error yourself
                                but the commit you made will be deleted and in logs you wont see that commit. whereas in --hard
                                it use to delete our code to the last version of commit as well as the commit you made will be deleted and in logs you wont see that commit
+   9) git branch - displays all the branches you have
+   10) git branch test: creates branch called test(i.e. copies existing working live website code in new branch called test)
+   11)git checkout test: to switch from one branch to another branch here it is test. And we can develop new functionality here without disturbing our live code
+   12) git merge test:  you should be in main and the type this command & it will merge your code of test branch in the main branch and it will be live
    #NOTE: this all above commands are of git and you are working on your machine only.
 
    #GitHUb
@@ -48,5 +52,22 @@
 
   #Note: from next time if you change anything simply
          git add .   ->>>> then ->>> git commit -m "message"  ->> git push   & your new code will be available on github
+
+
+
+ #Note: your collegues who are collaborating project will
+ 1) git clone https://github.com/SIDdhant-123/vcs.git: this will create clone on their machine
+ 2) from next time onwards they will perfor "git pull" to get latest data
+
+
+
+ #HOW TO HOST ON GITHUB???
+            1)open your repository on Github .In our case it is called "vcs"
+            2)click on "Settings" which is on horizontal navbar
+            3) click on "Pages" which is on vertical navbar
+            4) and the page we are hosting should be named as "index.html" only
+            5) Select our branch in our case its "main" and then click on "save"
+            6) Click on refresh and on the same page you will get  your hosted link of website 
+
 
          -->

@@ -3,12 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git, GitHub & more</title>
+    <link rel="icon" href= "git.avif" type="image/x-icon">
 </head>
 <body>
-    <ul>
-        <li>git init: to init the git in a project</li>
-    </ul>
+    <a href="index.html"><img src="./git.avif" width="100" alt="Cannot load git image" style="margin: 3px; border-radius: 50%; position: fixed; bottom: 25px; right: 25px;"></a>
+    <div style="border: 3px solid gray; border-radius: 40%; width: 400px; background-color: black; position: sticky; top: 0; left: 0;" >
+        <dl style=" padding: 20px; width: 100%; color: white; font-size: 18px;">
+            <dt style="text-decoration: underline;">STEPS TO INSTALL GIT: </dt>
+                <dd>1)Step1: Install Git from <a style="color: white;" href="https://git-scm.com/downloads" target="_blank">Click here</a> & restart your machine if required.</dd>
+            <dt style="text-decoration: underline;">HOW TO CHECK IF INSTALLED OR NOT?</dt>
+                <dd>On terminal: <span style="font-weight: bold;">git --version</span> <dd>
+
+
+        </dl>
+    </div>
+    <!-- <hr> -->
+
+    <div style="width: 450px; margin: auto; border: 2px solid gray; border-radius: 18px;">
+        <h3 style="text-align: center; text-decoration: underline;">Git Commands with the magic of story</h3>
+        <ul>
+            <li style="font-weight: bold;">git init</li>
+            To initialise the git in our project. By using the command, git comes into action and starts tracking all our files in our folder, where we run this command. For all the new files we would see (U) symbol which tells that the file is untracked or if we see (M) symbol in the explorer window of vscode it says that the file is modified.
+        
+
+            <div style="border: 1px dotted gray; margin-right: 5px; padding: 3px;">NOTE: [Consider Git as a Director at backstage & actors of play(i.e natak) as files]-> so once we do "git init" command, the director(i.e git) knows that the actors(i.e. or files) are somewhere at the backstage but their exact location  is not known to him(i.e. git) is called as untracked files(i.e. where exactly are the actors?)</div>
+            <br><br>
+            <li style="font-weight: bold;">git --version</li>
+            It is used to check the git version installed in our system.
+            <br><br>
+            <li style="font-weight: bold;">git config --global user.email "you@example.com"</li>
+            It is used to set the user email id which is used as identification while commiting the code.
+            <br><br>
+            <li style="font-weight: bold;">git config --global user.name "Your Name"</li>
+            It is used to set the user name which is used as identification while commiting the code.
+            <div style="border: 1px dotted gray; margin-right: 5px; padding: 3px;">NOTE: Run these two commands for setting email & username when you install Git for the very first time & for checking use "git config user.name" & "git config user.email".</div>
+            <br><br>
+            <li style="font-weight: bold;">git status</li>
+            It is used to check the status of our code. For example it specifies whether our file is untracked, modified, staged or commited.
+            <div style="border: 1px dotted gray; margin-right: 5px; padding: 3px;">NOTE: The Director(i.e. Git) ask his assistant to listdown (i.e. give status) of actors(i.e. files) whose location(i.e. untracked) we dont know at backstage .</div>
+            <br><br>
+            <li style="font-weight: bold;">git add [filename]</li>
+            It is used to stage the untracked code file. Means the file from the working directory is moved to the staging area where this file is held for its changes to be commited to local repository.
+            <br><br>
+            <li style="font-weight: bold;">git add .</li>
+            It will add i.e. stage all the code files to the staging area.
+            <div style="border: 1px dotted gray; margin-right: 5px; padding: 3px;">NOTE: The Director(i.e. Git) calls the actor(i.e files) one by one or on conference and brings them to backstage and now they are ready to go on stage to perform infront of the audience.</div>
+            <br><br>
+            <li style="font-weight: bold;">git commit -m "[message]"</li>
+            It is used to commit the staged changes to the local repository with a -m option where the message is given to identify the recent changes.
+            <div style="border: 1px dotted gray; margin-right: 5px; padding: 3px;">NOTE: commit is actually like savepoints in game and we will use this command whenever we sucessfully implement one of the important functionality of the code which means we have pushed that actor on stage infront of audience now.</div>
+
+            <br><br>
+            <li style="font-weight: bold;">git log</li>
+            To check logs of all the comitts we made till now.
+
+            <div style="border: 1px dotted gray; margin-right: 5px; padding: 3px;">NOTE: It is list of all the savepoints of the game(i.e. code here )we created till date & Type "q+Enter" to exit logs </div>
+            <br><br>
+            <li style="font-weight: bold;">git reset --hard [SHA number]</li>
+            It is used to delete the recent commit change and go back to the previous commit working code represented by that particular commit's SHA.
+            <div style="border: 1px dotted gray; margin-right: 5px; padding: 3px;">NOTE:[SHA number is the secured hash algorithm number which is unique for each commit.] if you have made a blunder in the latest code and you cannot find your error so you can go to previous commit
+               &  --hard means, you dont want any of the recent cod.So, take me to previous mentioned commit.</div>
+               <br><br>
+               <li style="font-weight: bold;">git reset --soft [SHA number]</li>
+            It is used to go back to the previous commited code along with the latest code change still available that means you have to remove error yourself. The git log will only show previous commited logs but the recent commited log will not be there even though the change in this commit will be still available.
+            <br><br>
+            <li style="font-weight: bold;">git remote add origin [url]</li>
+            We are adding a remote origin means where our code should be pushed on cloud.
+            <br><br>
+            <li style="font-weight: bold;">git branch -M main</li>
+            We are creating branch for that repository called "main"
+            <br><br>
+            <li style="font-weight: bold;">git push -u origin main</li>
+            It is used to push the code from local to remote at the specified URLs origin's main branch.
+            <br><br>
+            <li style="font-weight: bold;">git clone [url]</li>
+            This will create clone on your collegues machine who are colaborating with you in your project.
+            <br><br>
+            <li style="font-weight: bold;">git pull</li>
+                Once cloned they need to only use pull command to get latest code on their machine.
+                <br><br>
+                <li style="font-weight: bold;">git branch</li>
+                It is used to check which are the branches and which is the current branch we are in now.
+                <br><br>
+                <li style="font-weight: bold;">git branch [branchname]</li>
+            It is used to create a branch with the mentioned branch name.
+            <br><br>
+            <li style="font-weight: bold;">git checkout [branchname]</li>
+            To switch from one branch to another branch.
+            <br><br>
+            <li style="font-weight: bold;">git merge branchname
+            </li>
+            It is used to merge the new changes done in the mentioned branchname into the current branch.
+            
+
+            
+
+
+        </ul>
+    </div>
+    
     
 </body>
 </html>
